@@ -31,5 +31,5 @@ sudo apt-get install -y kubectl
 # Set permissions
 sudo usermod -aG docker vagrant && newgrp docker
 
-# Start minikube
-sudo runuser -u vagrant -- minikube start
+# Don't start minikube. This was causing some n/w issues
+# sudo runuser -u vagrant -- minikube start
