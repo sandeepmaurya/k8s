@@ -15,7 +15,7 @@ spec:
         app: greetings-app
     spec:
       containers:
-      - image: sandeepmaurya/springboot
-        name: springboot
+      - image: sandeepmaurya/greetings
+        name: greetings
         ports:
         - containerPort: 8080
