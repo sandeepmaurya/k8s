@@ -1,2 +1,5 @@
-virtualbox-cluster/.vagrant
-minikube-cluster/.vagrant
+**/.vagrant
+**/.gradle
+**/.idea
+**/build
+**/.DS_Store
