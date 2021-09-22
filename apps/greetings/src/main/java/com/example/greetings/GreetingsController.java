@@ -9,8 +9,19 @@ public class GreetingsController {
     @Value("${GREETING_PREFIX:Hello}")
     private String greetingPrefix;
 
+    @Value("${SECRET:}")
+    private String secret;
+
+    @Value("${HOSTNAME:}")
+    private String hostName;
+
     @GetMapping("/greet")
-    public String Greet(String name) {
-        return String.format("%s %s.", greetingPrefix, name);
+    public String greet(String name) {
+        return String.format("\n***\n%s> %s %s\n***\n\n", hostName, greetingPrefix, name);
+    }
+
+    @GetMapping("/secret")
+    public String getSecret(String name) {
+        return String.format("\n***\n%s> Secret is '%s'\n***\n\n", hostName, secret);
     }
 }
