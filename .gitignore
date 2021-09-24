@@ -3,3 +3,8 @@
 **/.idea
 **/build
 **/.DS_Store
+**/.settings
+**/bin
+**/.project
+**/.classpath
+**/.DS_Store
